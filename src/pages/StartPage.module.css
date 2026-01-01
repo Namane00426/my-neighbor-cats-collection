@@ -1,0 +1,56 @@
+:root {
+  --bg: #f7ebdf;
+  --text-main: #3A3A3A;
+  --text-sub: #6B6B6B;
+  --accent: #F5AB3C;
+  --walk: #92BA92;
+  --street: #525E75;
+  --action: #E68A2E;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: 'DotGothic16', 'Press Start 2P', sans-serif;
+  color: var(--text-main);
+}
+
+.section, .sectionAlt, .footer {
+  padding: 80px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'DotGothic16', sans-serif;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-sub);
+}
+
+.button {
+  background-color: var(--action);
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d97a1f;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
