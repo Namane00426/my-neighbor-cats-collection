@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './StartPage.module.css';
+import {useNavigate} from 'react-router-dom';
 
 
 
 const StartPage = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       {/* パート1：ログイン / 登録 */}
@@ -37,7 +39,9 @@ const StartPage = () => {
       {/* フッター：ボタン */}
       <section className={styles.footer}>
         <button className={styles.button}>Back to top</button>
-        <button className={styles.button}>Start app</button>
+        <button className={styles.button}
+        onClick={()=> navigate('/map')}
+        >Start app</button>
       </section>
     </div>
   );
