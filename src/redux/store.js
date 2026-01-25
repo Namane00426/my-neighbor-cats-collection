@@ -6,3 +6,5 @@ export const store = configureStore({
         cats: catsReducer,
     },
 });
+
+export default store;

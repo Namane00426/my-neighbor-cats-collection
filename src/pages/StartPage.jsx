@@ -15,7 +15,7 @@ const StartPage = () => {
         <div className={styles.authBox}>
           <button className={styles.button}>Login</button>
           <button className={styles.button}>Sign up</button>
-          <button className={styles.button}>Guest</button>
+          <button className={styles.button} onClick={()=>navigate('/map')}>Guest</button>
         </div>
       </section>
 
